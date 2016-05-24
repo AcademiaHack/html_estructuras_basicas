@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   get 'general/attributes', to: 'general#attributes'
   get 'general/formatting', to: 'general#formatting'
+  get 'general/tables', to: 'general#tables'
+  get 'general/lists', to: 'general#lists'
+  get 'general/forms', to: 'general#forms'
+  post 'general/post_form', to: 'general#post_form'
+  get 'general/get_form', to: 'general#get_form'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
