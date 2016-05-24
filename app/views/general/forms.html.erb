@@ -1,33 +1,27 @@
 <h3>HTML Forms</h3>
-
-<h4>Text</h4>
-<form>
+<form action="/general/get_form", method="get">
   First name:<br>
-  <input type="text" name="firstname"><br>
+  <input type="text" name="firstname" value="" placeholder="hola"><br>
   Last name:<br>
   <input type="text" name="lastname">
-</form>
-<h4>Radio</h4>
-<form>
+  <br>
   <input type="radio" name="gender" value="male" checked> Male<br>
   <input type="radio" name="gender" value="female"> Female<br>
   <input type="radio" name="gender" value="other"> Other
-</form>
-
-<h4>Submit</h4>
-<form action="/general/post_form", method="post">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br><br>
+  <br>
   <select name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
+    <option value="1" disabled="disabled">Volvo</option>
+    <option value="2">Saab</option>
+    <option value="3">Fiat</option>
+    <option value="4">Audi</option>
   </select>
+  <br>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car
+  <br>
   <textarea name="message" rows="10" cols="30">
-    The cat was playing in the garden.
+
   </textarea>
+  <br>
   <input type="submit" value="Submit">
 </form>
